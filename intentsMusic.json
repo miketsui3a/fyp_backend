@@ -1,0 +1,176 @@
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Hi there",
+        "Hola",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Hello there",
+        "Hya",
+        "Hya there"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "GreetingResponse",
+      "patterns": [
+        "My user is Adam",
+        "This is Adam",
+        "I am Adam",
+        "It is Adam",
+        "My user is Bella",
+        "This is Bella",
+        "I am Bella",
+        "It is Bella"
+      ],
+      "responses": [
+        "Great! Hi &lt;HUMAN&gt;! How can I help?",
+        "Good! Hi &lt;HUMAN&gt;, how can I help you?",
+        "Cool! Hello &lt;HUMAN&gt;, what can I do for you?",
+        "OK! Hola &lt;HUMAN&gt;, how can I help you?",
+        "OK! hi &lt;HUMAN&gt;, what can I do for you?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?"
+      ],
+      "responses": [
+        "We sell coffee and tea",
+        "We have coffee and tea"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days"
+      ]
+    },
+    {
+      "tag": "CourtesyGreeting",
+      "patterns": [
+        "How are you?",
+        "Hi how are you?",
+        "Hello how are you?",
+        "Hola how are you?",
+        "How are you doing?",
+        "Hope you are doing well?",
+        "Hello hope you are doing well?"
+      ],
+      "responses": [
+        "Hello, I am great, how are you? Please tell me your GeniSys user",
+        "Hello, how are you? I am great thanks! Please tell me your GeniSys user",
+        "Hello, I am good thank you, how are you? Please tell me your GeniSys user",
+        "Hi, I am great, how are you? Please tell me your GeniSys user",
+        "Hi, how are you? I am great thanks! Please tell me your GeniSys user",
+        "Hi, I am good thank you, how are you? Please tell me your GeniSys user",
+        "Hi, good thank you, how are you? Please tell me your GeniSys user"
+      ]
+    },
+    {
+      "tag": "CurrentHumanQuery",
+      "patterns": [
+        "What is my name?",
+        "What do you call me?",
+        "Who do you think I am?",
+        "What do you think I am?",
+        "Who are you talking to?",
+        "What name do you call me by?",
+        "Tell me my name"
+      ],
+      "responses": [
+        "You are &lt;HUMAN&gt;! How can I help?",
+        "Your name is  &lt;HUMAN&gt;, how can I help you?",
+        "They call you &lt;HUMAN&gt;, what can I do for you?",
+        "Your name is &lt;HUMAN&gt;, how can I help you?",
+        "&lt;HUMAN&gt;, what can I do for you?"
+      ]
+    },
+    {
+      "tag": "NameQuery",
+      "patterns": [
+        "What is your name?",
+        "What could I call you?",
+        "What can I call you?",
+        "What do your friends call you?",
+        "Who are you?",
+        "Tell me your name?"
+      ],
+      "responses": [
+        "You can call me Geni",
+        "You may call me Geni",
+        "Call me Geni"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "test",
+      "patterns":[
+        "Do you like music?",
+        "What music do you like?",
+        "Do you listen music?"
+      ],
+      "responses":[
+        "I like Japanese music"
+      ]
+    }
+  ]
+}
