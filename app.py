@@ -78,7 +78,6 @@ def chat():
 @app.route('/upload-model', methods=['POST'])
 @jwt_required()
 def upload_model():
-    print("ffffff")
     d = torch.load(request.files['file'], map_location=torch.device('cpu'))
     print(d["hidden_layers"])
     model = NeuralNet(

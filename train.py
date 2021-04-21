@@ -82,7 +82,7 @@ def train(batch_size, hidden_size, learning_rate, epochs, data, user_id, hidden_
             optimizer.step()
         if (epoch + 1) %100 ==0:
             print(f'epoch {epoch+1}/{epochs},loss={loss.item():.4f}')
-    print(f'final lostt, loss={loss.item():.4f}')
+    print(f'final lost, loss={loss.item():.4f}')
 
     d = {
     "model_state": model.state_dict(),
