@@ -9,14 +9,14 @@ s3 = boto3.resource('s3')
 bucket = s3.Bucket(bucketName)
 
 client = pymongo.MongoClient(
-    "mongodb+srv://miketsui3a:aA26761683@cluster0.bnkhm.azure.mongodb.net")
+    "secret")
 db = client['fyp']
 userRepo = db['user']
 
 
 def upload(filename, user_id, loss):
     r = bucket.upload_file(Filename=filename, Key=filename, ExtraArgs={'ACL': 'public-read'})
-    presign_link = 'https://fyp-mike2021.s3-ap-southeast-1.amazonaws.com/'+filename
+    presign_link = 'secret'+filename
 
     userRepo.update_one({'_id':ObjectId(user_id)},{"$push":{"s3":{
         "presign_link": presign_link,
